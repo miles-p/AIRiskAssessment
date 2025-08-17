@@ -2,12 +2,17 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import colorama
+import pyttsx3
 
 load_dotenv()
 
 alice = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 bob = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 charlie = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+alice_voice = pyttsx3.init()
+bob_voice = pyttsx3.init()
+charlie_voice = pyttsx3.init()
 
 delta_message_history = []
 
