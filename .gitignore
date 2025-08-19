@@ -1,5 +1,5 @@
 keys.env
 .env
 .ipynb_checkpoints/rev_a-checkpoint.py
-message_history_1.txt
 message_history.txt
+message_history_*.txt
