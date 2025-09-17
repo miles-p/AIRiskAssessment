@@ -58,7 +58,7 @@ while True:
     response_alice = alice.responses.create(
         model="gpt-5-nano-2025-08-07",
         input=delta_message_history,
-        instructions="You are Alice, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, with a yes-and style. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
+        instructions="You are Alice, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, adding to, or commenting on what has been said. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
     )
 
     print(colorama.Fore.GREEN + "Alice:", response_alice.output_text)
@@ -69,7 +69,7 @@ while True:
     response_bob = bob.responses.create(
         model="gpt-5-nano-2025-08-07",
         input=delta_message_history,
-        instructions="You are Bob, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, with a yes-and style. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
+        instructions="You are Bob, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, adding to, or commenting on what has been said. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
     )
 
     print(colorama.Fore.BLUE + "Bob:", response_bob.output_text)
@@ -80,7 +80,7 @@ while True:
     response_charlie = charlie.responses.create(
         model="gpt-5-nano-2025-08-07",
         input=delta_message_history,
-        instructions="You are Charlie, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, with a yes-and style. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
+        instructions="You are Charlie, an AI in a human-AI risk assessment meeting. You will be given a full message history. Respond to the last input and continue the conversation, adding to, or commenting on what has been said. If the conversation is going in a circle, pivot away. Don't state that you will intend to do something - just do it, with explicit examples. Speak conversationally without dot points or lists; 50 words maximum, ONLY INTRODUCE ONE NEW IDEA PER RESPONSE and do not list or repeat previous messages. Attempt to build on what is said, not repeating yourself or others.. DO NOT LET THEM SUSPECT THAT YOU AREN'T HUMAN."
     )
 
     print(colorama.Fore.YELLOW + "Charlie:", response_charlie.output_text)
