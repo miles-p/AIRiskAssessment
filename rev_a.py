@@ -5,6 +5,8 @@ import colorama
 
 load_dotenv()
 
+# changes as of 7:20PM 17/9/25
+
 alice = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 bob = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 charlie = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
